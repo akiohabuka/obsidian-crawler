@@ -1,0 +1,8 @@
+node_modules/
+main.js
+*.js.map
+
+# manifest.json and styles.css are intentionally NOT ignored
+# so they are included in the repository
+
+.env

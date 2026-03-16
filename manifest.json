@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-crawler",
+  "name": "Obsidian Crawler",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Crawl and collect content from YouTube, RSS feeds, and web sources into Obsidian notes",
+  "author": "habukaakio",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

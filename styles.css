@@ -1,0 +1,195 @@
+/* YouTube Content Fetcher - Plugin Styles */
+
+/* ─── 共通 ─────────────────────────────────────────────────────── */
+.ytcf-empty-msg {
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 8px 0;
+}
+
+.ytcf-modal-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+/* ─── 設定画面 ──────────────────────────────────────────────────── */
+.ytcf-channel-list-container {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 12px;
+  min-height: 40px;
+}
+
+.ytcf-channel-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.ytcf-channel-row:last-child {
+  border-bottom: none;
+}
+
+.ytcf-channel-info {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.ytcf-channel-name {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ytcf-channel-id {
+  color: var(--text-muted);
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+.ytcf-delete-btn {
+  color: var(--text-error);
+  border: 1px solid var(--text-error);
+  background: transparent;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.ytcf-delete-btn:hover {
+  background: var(--background-modifier-error);
+}
+
+/* ─── 実行モーダル（確認画面） ──────────────────────────────────── */
+.ytcf-check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.ytcf-check-row input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.ytcf-check-row label {
+  cursor: pointer;
+}
+
+.ytcf-indent {
+  padding-left: 24px;
+}
+
+.ytcf-channel-list {
+  margin: 8px 0 16px 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* ─── 実行モーダル（実行中・完了画面） ─────────────────────────── */
+.ytcf-progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.ytcf-progress-wrapper progress {
+  flex: 1;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--background-modifier-border);
+}
+
+.ytcf-progress-wrapper progress::-webkit-progress-bar {
+  background: var(--background-modifier-border);
+  border-radius: 6px;
+}
+
+.ytcf-progress-wrapper progress::-webkit-progress-value {
+  background: var(--interactive-accent);
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.ytcf-progress-wrapper span {
+  min-width: 40px;
+  text-align: right;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+.ytcf-log-label {
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+}
+
+.ytcf-log-area {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 8px;
+  height: 200px;
+  overflow-y: auto;
+  background: var(--background-secondary);
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
+}
+
+.ytcf-log-line {
+  padding: 2px 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+  line-height: 1.5;
+}
+
+/* ─── チャンネル追加モーダル ────────────────────────────────────── */
+.ytcf-hidden {
+  display: none !important;
+}
+
+.ytcf-channel-preview {
+  margin: 12px 0;
+  padding: 10px 14px;
+  background: var(--background-secondary);
+  border-radius: 6px;
+  border-left: 4px solid var(--interactive-accent);
+}
+
+.ytcf-preview-name {
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.ytcf-preview-id {
+  color: var(--text-muted);
+  font-size: 0.85em;
+  margin: 0;
+  font-family: var(--font-monospace);
+}
+
+/* ─── 完了サマリー ──────────────────────────────────────────────── */
+.ytcf-summary {
+  margin: 12px 0;
+  padding: 10px 14px;
+  background: var(--background-secondary);
+  border-radius: 6px;
+  border-left: 4px solid var(--interactive-accent);
+}
